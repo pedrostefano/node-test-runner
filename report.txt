@@ -1,0 +1,75 @@
+TAP version 13
+# Subtest: formatFileSize function
+    # Subtest: should return '0B' for sizeBytes = 0
+    ok 1 - should return '0B' for sizeBytes = 0 # SKIP
+      ---
+      duration_ms: 0.412333
+      ...
+    # Subtest: should return '1.00 MB' for sizeBytes = 1048576
+    ok 2 - should return '1.00 MB' for sizeBytes = 1048576 # SKIP
+      ---
+      duration_ms: 0.050458
+      ...
+    # Subtest: should return '1.00 GB' for sizeBytes = 1073741824 @large
+    ok 3 - should return '1.00 GB' for sizeBytes = 1073741824 @large
+      ---
+      duration_ms: 0.230417
+      ...
+    # Subtest: should return '5.00 GB' for sizeBytes = 5368709120 @large
+    ok 4 - should return '5.00 GB' for sizeBytes = 5368709120 @large
+      ---
+      duration_ms: 0.052708
+      ...
+    1..4
+ok 1 - formatFileSize function
+  ---
+  duration_ms: 1.65475
+  type: 'suite'
+  ...
+# (node:68012) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Mocking fs.readFile in Node.js
+    # Subtest: should successfully read the content of a text file
+    ok 1 - should successfully read the content of a text file
+      ---
+      duration_ms: 0.908458
+      ...
+    1..1
+ok 2 - Mocking fs.readFile in Node.js
+  ---
+  duration_ms: 1.408625
+  type: 'suite'
+  ...
+# Subtest: Mocking setTimeout in Node.js
+    # Subtest: should successfully mock setTimeout
+    ok 1 - should successfully mock setTimeout
+      ---
+      duration_ms: 0.7625
+      ...
+    1..1
+ok 3 - Mocking setTimeout in Node.js
+  ---
+  duration_ms: 1.267917
+  type: 'suite'
+  ...
+# Subtest: Mocking the Date object in Node.js
+    # Subtest: should effectively mock the Date object starting from 200 milliseconds
+    ok 1 - should effectively mock the Date object starting from 200 milliseconds
+      ---
+      duration_ms: 0.214375
+      ...
+    1..1
+ok 4 - Mocking the Date object in Node.js
+  ---
+  duration_ms: 0.289833
+  type: 'suite'
+  ...
+1..4
+# tests 7
+# suites 4
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 2
+# todo 0
+# duration_ms 62.037916
